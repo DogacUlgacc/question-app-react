@@ -1,16 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-
 import reportWebVitals from './reportWebVitals';
-import Post from './Components/Post/Post.js';
-import Comment from './Components/Comment/Comment.js';
+import App from './App.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Post />
-  <Comment />
+    <App/>
   </React.StrictMode>
 );
 
