@@ -1,0 +1,11 @@
+.postContainer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #c8dbea;
+    padding: 15px;
+}
+.buttonContainer{
+    margin: 0px;
+    padding :0px;
+}
