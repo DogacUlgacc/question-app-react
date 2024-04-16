@@ -5,6 +5,8 @@ function Comment() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [commentList, setCommentList] = useState([]);
 
+   
+
     useEffect(() => {
         fetch("/comment")
             .then(res => res.json())

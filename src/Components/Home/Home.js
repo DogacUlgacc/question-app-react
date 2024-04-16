@@ -41,7 +41,7 @@ function Home(){
                     userId = {1} userName= {"post.userName"} refreshPosts ={refreshPosts}
                     />
                     {postList.map(post => ( 
-                    <Post  userId = {post.userId} userName= {post.userName} title ={post.title}  text ={post.text} />))}
+                    <Post postId = {post.id}  userId = {post.userId} userName= {post.userName} title ={post.title}  text ={post.text} />))}
                 </div>
            </Container>
         );

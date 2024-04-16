@@ -19,14 +19,19 @@ function PostForm(props) {
   const [title,setTitle] = useState("");
   const[isSent,setIsSent] = useState(false);
   const handleSubmit = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
+    if (title.trim() === "" || text.trim() === "") {
+      alert("Title and text area can not be empty!");
+      return;
+    }else { 
     savePost();
     refreshPosts();
     setIsSent(true);
     setText("");
-    setTitle("");
+    setTitle("");}
 } 
   const handleTitle = (value) => {
+    
     setTitle(value);
     setIsSent(false);
   }
@@ -83,8 +88,7 @@ function PostForm(props) {
           fullWidth
           value = {title}
           onChange={ (input ) => handleTitle (input.target.value)}
-          >
-            
+          >  
           </OutlinedInput>}
           subheader=""/>
       
