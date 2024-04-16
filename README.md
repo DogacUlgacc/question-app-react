@@ -13,5 +13,4 @@ and engage in meaningful interactions.
 
 
 
-
-
+![image](https://github.com/DogacUlgacc/question-app-react/assets/118834752/290ebad3-458c-4b92-aea0-f9dc8af05028)
